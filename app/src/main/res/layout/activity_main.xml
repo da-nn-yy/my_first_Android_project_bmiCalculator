@@ -3,16 +3,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Title TextView -->
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="BMI Calculator"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
 
     <!-- Weighttttttttttttt -->
     <TextView
@@ -20,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Weight"
+        android:text="@string/weight"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginTop="120dp" />
@@ -31,7 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/weightTitleTextView"
         android:layout_marginTop="16dp"
-        android:hint="in Kg"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/in_kg"
         android:inputType="numberDecimal"
         android:padding="8dp" />
 
@@ -45,7 +36,7 @@
         android:text="Height"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="70dp" />
 
     <!-- Calculate Button -->
     <EditText
@@ -66,6 +57,10 @@
         android:layout_below="@id/heightEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:fontFamily="sans-serif-black"
         android:text="Calculate BMI" />
 
     <!-- Result TextView -->
@@ -75,7 +70,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/calculateButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="20sp" />
+
 </RelativeLayout>
