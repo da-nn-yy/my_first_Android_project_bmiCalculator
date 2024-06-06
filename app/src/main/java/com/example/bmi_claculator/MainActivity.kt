@@ -53,8 +53,8 @@ class MainActivity : AppCompatActivity() {
             (bmi >18.5) && (bmi < 24.9) -> "Normal"
             (bmi > 25.0) && (bmi < 29.9) -> "Overweight"
             (bmi > 30.0) && (bmi < 34.9) -> "Obesity class I"
-            (bmi > 35.0) && (bmi < 24.9) -> "Obesity class II"
-            bmi < 30 -> "Overweight"
+            (bmi > 35.0) && (bmi < 39.9) -> "Obesity class II"
+            bmi > 40 -> "Obesity class III"
             else -> "Obese"
         }
 
