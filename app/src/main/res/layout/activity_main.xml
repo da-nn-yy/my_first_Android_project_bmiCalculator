@@ -14,37 +14,59 @@
         android:textStyle="bold"
         android:layout_marginTop="16dp" />
 
-    <!-- Height Input -->
-    <EditText
-        android:id="@+id/heightEditText"
-        android:layout_width="match_parent"
+    <!-- Weighttttttttttttt -->
+    <TextView
+        android:id="@+id/weightTitleTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/titleTextView"
-        android:layout_marginTop="16dp"
-        android:hint="Enter height in meters"
-        android:inputType="numberDecimal"
-        android:padding="8dp" />
+        android:layout_centerHorizontal="true"
+        android:text="Weight"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp" />
 
-    <!-- Weight Input -->
     <EditText
         android:id="@+id/weightEditText"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/heightEditText"
+        android:layout_below="@id/weightTitleTextView"
         android:layout_marginTop="16dp"
-        android:hint="Enter weight in kg"
+        android:hint="in Kg"
         android:inputType="numberDecimal"
         android:padding="8dp" />
 
-    <!-- Calculate Button -->
-    <Button
-        android:id="@+id/calculateButton"
+    <!-- hEIGHTTTTTTTTTTT -->
+    <TextView
+        android:id="@+id/HeightTitleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/weightEditText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:text="Calculate" />
+        android:text="Height"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp" />
+
+    <!-- Calculate Button -->
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HeightTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="in Meters"
+        android:inputType="numberDecimal"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Calculate BMI" />
 
     <!-- Result TextView -->
     <TextView
