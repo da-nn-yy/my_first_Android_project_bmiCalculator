@@ -58,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             else -> "Obese"
         }
 
-        resultTextView.text = String.format("BMI: %.2f (%s)", bmi, bmiLabel)
+        val space: String = "  ";
+
+        resultTextView.text = String.format("$space BMI: $bmi\n\n$bmiLabel", bmi,bmiLabel)
     }
 }

@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/calculateButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text=""
         android:textSize="20sp" />
 
