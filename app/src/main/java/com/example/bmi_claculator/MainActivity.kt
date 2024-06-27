@@ -60,6 +60,6 @@ class MainActivity : AppCompatActivity() {
 
         val space: String = "  ";
 
-        resultTextView.text = String.format("$space BMI: $bmi\n\n$bmiLabel", bmi,bmiLabel)
+        resultTextView.text = String.format("BMI: $bmi\n$bmiLabel", bmi,bmiLabel)
     }
 }
